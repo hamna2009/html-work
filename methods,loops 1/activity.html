@@ -1,0 +1,23 @@
+<html>
+    
+    <body>
+        <h3 id="code"></h3>
+        <center><h2>Methods</h2></center>
+        <script>
+            var code = "computer is fun";
+            document.write(code.toUpperCase() + "<br>");
+            document.write(code.toLowerCase() + "<br>");
+            document.write(code.startsWith('p') + "<br>");
+            var haze = new RegExp("is");
+            var summer = haze.test(code);
+            document.write(summer + "<br>");
+            
+            var back = "";
+var Arr = [ "English", "Korean", "Russian", "Arabic", "Chinese"];
+for (var i=0; i < Arr.length; i++) {
+    back += Arr[i] + "<br>";
+}
+     document.getElementById("code").innerHTML = back;     
+             </script>
+    </body>
+</html>
