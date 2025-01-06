@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>ARRAYS</h1>
+        <h3 id="subs"></h3>
+        <script>
+var subjects = [ "maths", "english", "science", "history", "geography"];
+document.write(subjects.join(" ........." + "<br>"));
+document.getElementById("subs").innerHTML = subjects[3];
+document.write("<br>" + subjects + "<br>");
+subjects.pop();
+    document.write(subjects + "<br>");
+    function numbers(z,y) {
+        return z/y;
+    }
+    function percentage(z,y) {
+       return numbers(z,y)*100;
+    }
+    var calc = percentage(122,500);
+    document.write(calc);
+        </script>
+    </body>
+</html>
