@@ -1,0 +1,33 @@
+<html>
+    <body>
+ <h3>Argument Object and Trigonometric functions</h3>
+ <p id="maths"></p>
+ <p id="operation"></p>
+ <p id="function"></p>
+ <p id="trigonometry"></p>
+ <button type="button" onclick="sum(12,7,2009)">ADD THE NUMBERS</button><br><br>
+
+ <script>
+    var math1 = Math.tan(90);
+    document.getElementById("maths").innerHTML = "The result of tangent is " + math1;
+    var math2 = Math.sin(90);
+    document.getElementById("operation").innerHTML = "The result of sin is " + math2;
+    var math3 = Math.cos(90);
+    document.getElementById("function").innerHTML = "The result of cosecond is " + math3;
+    var math4 = Math.abs(-90);
+        document.getElementById("trigonometry").innerHTML = "The absolute value is " + math4;
+
+        var atan = Math.atan(2);
+            document.write("The result of tangent inverse is " + atan + "<br>");
+        var asin = Math.asin(1);
+            document.write("The result of sin inverse is " + asin + "<br>");
+        var acos = Math.acos(-1);
+            document.write("The result of cosecond inverse is " + acos + "<br>");
+
+           function sum(x,y,z) {
+            var x,y,z;
+             alert(x+y+z);
+           }
+        </script>
+ </body>
+</html>
