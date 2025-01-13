@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h3>Tinu's Characteristics</h3>
+        <p id="store"></p>
+        <script>
+var information = {name: "Tinu", age: 14, class: 8, nationality: "Chinese"};
+document.getElementById("store").innerHTML = information.name + " is a " + information["nationality"] + " girl. She is " + information["age"] + " years old and studies in " + information.class + " grade.";
+document.write(Object.values(information).join("*/*"));
+var color = ["red", "pink", "yellow", "green","blue"];
+document.write("<br><br> Tinu's favorite colors are " + color.join("--|--") + ". <br><br>");
+document.write(color[0] + " , " + color[2] + " and " + color[4] + " are primary colors.<br><br>");
+document.write(color + "<br>");color.pop();
+    document.write(color);
+        </script>
+    </body>
+    </html>

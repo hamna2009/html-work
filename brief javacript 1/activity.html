@@ -1,0 +1,35 @@
+<html>
+    <body>
+<h4>Data types</h4>
+<button onclick="doc()">Click</button><br><br>
+        <script>
+            var work, code, language, comp, edit;
+            work = 48;
+            code = 200;
+            edit = 48;
+            language = null;
+            document.write("By comparing values of two variables " + (code == work) + ".<br>");
+            document.write("By comparing values of two variables " + (edit == work) + ".<br>");
+            document.write(language + "<br>");
+            document.write(comp + "<br>");
+
+            function doc() {
+                var time, greet;
+                time = new Date().getHours();
+                if(time < 8) {
+                    greet = "hello";
+                }
+                else if (time < 14) {
+                    greet = "Well done";
+                }
+                else {
+                    greet = "All the best";
+                }
+                document.write("The current time is " + time + "<br>");
+                
+document.write("The current time with greeting is " + greet + "<br>");
+            }
+           
+        </script>
+    </body>
+</html>
