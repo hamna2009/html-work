@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h2 id="code">HTML DOM</h2>
+        <p id="paragraph"></p>
+<button onclick="script()">External Script File</button><br><br>
+<button onclick="showValue()">Press Me</button><br>
+<p id="result"></p>
+<script src="external.js"></script><script>
+ document.write(document.getElementById("code").innerHTML);
+ document.getElementById("paragraph").innerHTML= "Assigning value of one node to another. <br>";
+ var value = document.getElementById("paragraph").innerHTML;
+    function showValue() {
+        document.getElementById("result").innerHTML = value;
+    }
+</script>
+    </body>
+</html>
