@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            class computer {
+                constructor (year, model, generation) {
+                this.var1 = year;
+                this.var2 = model;
+                this.var3 = generation;
+            }
+            age() {
+            let date = new Date();
+            return date.getFullYear() - this.var1;
+        }
+    }
+        IDM = new computer(1945, "vaccumm tubes", "Generation_1");
+        corei5 = new computer(1963, "IC chips", "Generation_3");
+        macbook = new computer(2022, "micprocessor", "Generation_4");
+        document.write(IDM.var2 + " are used in " + IDM.var3 + " and these years have passed till its release " + IDM.age() +  ".<br>");
+        </script>
