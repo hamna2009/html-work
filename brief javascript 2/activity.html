@@ -1,0 +1,18 @@
+<html>
+    <body>
+       <center><h3><u>WHILE LOOP</u></h3></center>
+<p>Using while loop to generate random values.</p>
+<p id="outBlock"></p>
+        <script>
+  var i;          
+{
+    let i = 0;
+while(i<1000) {
+var randomNum = Math.floor(Math.random()*(50-1+1)) +1;
+document.write("The generated random number " + (i+1) + " is " + randomNum + ".<br>"); i++;
+}
+}
+document.getElementById("outBlock").innerHTML = "The value of i outside the block is " + i;
+        </script>
+    </body>
+</html>
