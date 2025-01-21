@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <p id="write"></p>
+        <script>
+var sentence = "What is my occupation?"
+var find = sentence.search("my");
+var correct = sentence.replace("my", " your");
+var w,v;
+w = 2;
+v = 3;
+document.write(sentence + "<br>");
+document.write(find + "<br>");
+document.write(correct + "<br>");
+document.getElementById("write").innerHTML = String(w) + String(v);
+w = String(w)
+document.write(typeof(w));
+
+w = Number(w);
+y = w + 45;
+document.write("<br>" + y);
+try {
+    document.wite("<br> hello");
+}
+catch(err) {
+document.write("<br>" + err.message);
+}
+sub = (z,t) => z*t*t;
+document.write("<br>" + sub(40,7));
+
+        </script>
