@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <h2>CLASS INHERITENCE</h2>
+        <script>
+        class parent {
+        constructor(greeting, task) {
+            this.lang1 = greeting;
+            this.lang2 = task;
+        }
+        method1() {
+            return " I am " + this.lang2 + " right now.";
+        }
+        method2() {
+            var date = new Date();
+            return "working for " +  date.getHours() + " hours " + date.getMinutes() + " minutes." ;
+        }
+ }
+        class child extends parent {
+        constructor(greeting, task, company, country) {
+            super(greeting, task);
+            this.lang3 = company;
+            this.lang4 = country;
+            }
+        tell() {
+            return "I live in " + this.lang4 + ".";
+        }
+        work() {
+            return "I have a high salary job at " + this.lang3 + " and " + this.method2();
+        }
+        }
+
+        obj1 = new child("Hello!", "reseaching on wild animals", "Apple", "Korea");
+        obj2 = new child("Good Afternoon!", "gathering data of new employees", "Samsung", "USA");
+        obj3 = new child("Good Evening!", "calculating the bill", "Sapphire", "Pakistan");
+
+        document.write(obj1.lang1 + " In " + obj1.lang4 + ", " + obj1.work() + " " + obj1.method1() + "<br><br>");
+        document.write(obj2.lang1 + " " + obj2.tell() + " And I have been " + obj1.method2() + " at " + obj2.lang3 + ".<br><br>");
+        document.write(obj3.lang1 +  " I am " + obj3.lang2 + ". " + obj3.tell() + " " + obj3.work() + "<br><br><h2>STATIC CLASS</h2>");
+
+        class comp {
+            constructor (name, age, grade) {
+                this.var1 = name;
+                this.var2 = age;
+                this.var3 = grade;
+            }
+            static greet() {
+                return "Goodbye.";
+            }
+            static code(unknown) {
+                   return "Students of grade " + unknown.var3 + " are in  middle school.";        
+             }
+            Normalmethod() {
+                return this.var1 + " is " + this.var2 + " years old and in " + this.var3 + " grade";
+                
+            }
+      }
+      macbook = new comp("Tina", "15", "9");
+      iphone = new comp("Saira", "10", "5");
+      document.write(macbook.Normalmethod() + " whereas " + iphone.Normalmethod() + ".<br>");
+      document.write(comp.code(iphone) + "<br>");
+      document.write(comp.greet());
+         </script>
+    </body>
+</html>
