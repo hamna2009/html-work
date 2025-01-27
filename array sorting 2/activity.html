@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2>Array Mapping</h2>
+        <p id="map"></p>
+        <p id="mapping"></p>
+        <button onclick="ascending()"><b>Acsending</b></button>
+        <button onclick="descending()"><b>Decsending</b></button>
+        <p id="function"></p>
+        <script>
+var array1 = [12,7,24,1,5,8];
+function forarray1(value) {
+return value*value*2+1;
+}
+var array2 = array1.map(forarray1);
+    document.getElementById("map").innerHTML = array1;
+document.getElementById("mapping").innerHTML = array2.join(" ...... ") + "<br><br><h2>Array Sorting</h2>";
+   document.getElementById("function").innerHTML = array2;
+   function ascending() { 
+    array2.sort(function(x,y) {return x-y});
+    document.getElementById("function").innerHTML = "The mapped array in ascending order is " + array2 + ".";
+}
+   function descending() {
+           array2.sort(function (x, y) { return y -x });
+  document.getElementById("function").innerHTML = "The mapped array in descending order is " + array2 + ".";
+   }
+        </script>
+    </body>
+</html>
