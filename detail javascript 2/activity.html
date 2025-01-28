@@ -1,27 +1,17 @@
 <html>
     <body>
         <h2>Error Handling</h2>
-        <button onclick="test()">Find Errors</button>
-        <p id="sub"></p>
-        <p id="subs"></p>
+        <p id="error"></p>
         <script>
-            function test() {
-           try { 
-            var subjects = ["maths", "english", "science", "history", "geography"];
-                    document.write(subjects.join(" ........." + "<br>"));
-                try {
-                    bug();
+            try { 
+             var subjects = ["maths", "english", "science", "history", "geography"];
+                    documnet.writte(subjects.join(" ........." + "<br>"));
+                var arr = 5;
+               document.write(array);
                      }
-                }
                catch(err) {
-                   document.getElementById("sub").innerHTML = err.message + ".";
+                   document.getElementById("error").innerHTML = err.message + ".";
                }
-            
-             catch(err) {
-                    document.getElementById("subs").innerHTML = err.message + ".";
-                }
-            }
-            
-            </script>
-    </body>
+</script>
+</body>
 </html>
