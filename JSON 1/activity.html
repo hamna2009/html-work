@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            var obj1 = { time: "09:00", greet:"hello", occupation: "manager"};
+            var data = JSON.stringify(obj1);
+            var obj2 = JSON.parse(data);
+            document.write(obj2.occupation + "<br>" + obj2.time);
+            async function result(x,y) {
+                var resp = await x+y;
+                display(resp) ;
+            }
+            function display(some) {
+                document.write("<br>" + some);
+            }
+            result(10,20);
+            </script>
+    </body>
+    </html>
