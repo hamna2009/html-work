@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form name="education" onsubmit="field()">
+            <label>Email</label><br>
+            <input type="email" name="email"><br><br>
+            <input value="submit" type="submit">
+
+        </form>
+        <p id="correct"></p>
+        <script>
+function field() {
+var check = document.forms["education"]["email"].value;
+if (check == ""){
+    alert("Field is not completed!");
+    return false;
+}
+}
+
+function func() {
+var num = document.getElementById("check");
+if (!num.checkValidity()) {
+    document.getElementById("number").innerHTML = 
+    num.validationMessage;
+}
+else {
+    document.getElementById("number").innerHTML = "successfully log in";
+}
+}
+
+        </script>
+        <label>Number</label><br>
+        <input id="check" type="number" min="4" max="10" required>
+        <button onclick="func()">Log In </button>
+        <p id="number"></p>
+    </body>
+</html>
