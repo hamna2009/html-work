@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>Promises in JavaScript</h2>
+        <button onclick="func3()">Click Me</button>
+        <p id="click"></p>
+        <script>
+            function func3() {
+ async function func1(x,y) {
+    var multiply = await x*y*x*y*x;
+    func2(multiply);
+}
+function func2(calc) {
+document.getElementById("click").innerHTML = calc;
+}
+func1(1000000,10);
+            }
+        </script>
+    </body>
+</html>
