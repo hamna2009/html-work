@@ -1,0 +1,26 @@
+<html>
+<body>
+<h1>Welcome To My Website</h1>
+<p>Fill up the below form;</p>
+<form name="page" onsubmit="validation()">
+    <label>NAME:</label><br>
+    <input type="text" name="name"><br><br>
+    <label>AGE:</label><br>
+    <input type="number" name="age" min="18" ><br><br>
+    <input type="submit" value="LOG IN">
+</form>
+    <script>
+function validation() {
+    var text = document.forms["page"]["name"].value;
+    var number = document.forms["page"]["age"].value;
+if (text == "" || number == "" ) {
+alert("Required Fields are not completed!");
+return false;
+}
+else {
+ alert("Log In successfully");
+}
+}
+    </script>
+</body>
+</html>
